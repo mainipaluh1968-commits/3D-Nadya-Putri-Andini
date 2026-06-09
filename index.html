@@ -1,34 +1,46 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Model 3D Mobil</title>
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: #f5f5f5; font-family: Arial, sans-serif; }
-    model-viewer {
-      width: 100%;
-      height: 90vh;
-      background: #ffffff;
-    }
-    .info {
-      text-align: center;
-      padding: 12px;
-      font-size: 14px;
-      color: #333;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Model 3D Mobil</title>
+    
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+        }
+        model-viewer {
+            width: 100%;
+            height: 90vh;
+            background-color: #ffffff;
+        }
+        .info {
+            text-align: center;
+            padding: 12px;
+            font-size: 14px;
+            color: #333333;
+        }
+    </style>
 </head>
 <body>
-  <model-viewer 
-    src="MOBIL.glb" 
-    alt="Model 3D Mobil"
-    camera-controls
-    auto-rotate
-  >
-  </model-viewer>
-  <div class="info">Geser layar untuk memutar | Cubit untuk memperbesar</div>
+
+    <model-viewer src="MOBIL.glb" 
+                  alt="Model 3D Mobil" 
+                  camera-controls 
+                  auto-rotate>
+    </model-viewer>
+
+    <div class="info">
+        Geser layar untuk memutar | Cubit untuk memperbesar
+    </div>
+
 </body>
 </html>
